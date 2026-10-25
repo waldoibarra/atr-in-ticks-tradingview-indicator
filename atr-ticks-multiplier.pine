@@ -54,7 +54,7 @@ bool waitForClosesInput = input.bool(DEFAULT_WAIT_CLOSES, TITLE_WAIT_CLOSES, gro
 // @function                    Calculates Average True Range using the specified moving average type.
 // @param movingAverateLength   The lookback period (length) for the smoothing calculation.
 // @param movingAverageType     The desired moving average type (e.g., "RMA", "EMA").
-// @returns                     The smoothed price value (a series).
+// @returns                     The selected moving average of true range (a series).
 calculateAverageTrueRange(int movingAverateLength, string movingAverageType) =>
     float trueRange = ta.tr(true)
 
